@@ -40,7 +40,15 @@ class _FlowPageState extends State<FlowPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/speed');
+              },
+              icon: const Icon(Icons.arrow_forward))
+        ],
+      ),
       backgroundColor: Colors.grey[100],
       body: Container(
         height: double.infinity,

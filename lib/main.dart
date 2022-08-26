@@ -1,12 +1,15 @@
 import 'package:basic_widgets_intermediate/pages/btn/btn_page.dart';
+import 'package:basic_widgets_intermediate/pages/dial/speed_dial_page.dart';
 import 'package:basic_widgets_intermediate/pages/first/first_page.dart';
 import 'package:basic_widgets_intermediate/pages/flow/flow_page.dart';
 import 'package:basic_widgets_intermediate/pages/fourth/fourth_page.dart';
 import 'package:basic_widgets_intermediate/pages/grid_page/grid_page.dart';
 import 'package:basic_widgets_intermediate/pages/home/home_page.dart';
 import 'package:basic_widgets_intermediate/pages/login/login_page.dart';
+import 'package:basic_widgets_intermediate/pages/navi/navi_page.dart';
 import 'package:basic_widgets_intermediate/pages/page/previus_page.dart';
 import 'package:basic_widgets_intermediate/pages/second/second_page.dart';
+import 'package:basic_widgets_intermediate/pages/sliver/sliver_page.dart';
 import 'package:basic_widgets_intermediate/pages/third/third_page.dart';
 import 'package:flutter/material.dart';
 
@@ -34,10 +37,15 @@ class MyApp extends StatelessWidget {
         '/fourth': (context) => const FourthPage(),
         '/button': (context) => const ButtonPage(),
         '/login': (context) => const LoginPage(),
-        '/flow': (context) => const FlowPage()
+
+        ///26.08.2022
+        '/flow': (context) => const FlowPage(),
+        '/speed': (context) => const SpeedPage(),
+        '/sliver': (context) => const SliverPage(),
+        '/navi': (context) => const NaviPage()
       },
       debugShowCheckedModeBanner: false,
-      initialRoute: '/third',
+      initialRoute: '/navi',
     );
   }
 }
