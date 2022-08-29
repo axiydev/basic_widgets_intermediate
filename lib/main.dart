@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         '/flow': (context) => const FlowPage(),
         '/speed': (context) => const SpeedPage(),
         '/sliver': (context) => const SliverPage(),
-        '/navi': (context) => const NaviPage()
+        '/navi': (context) => const NaviPage(),
       },
       debugShowCheckedModeBanner: false,
       initialRoute: '/navi',
